@@ -8,12 +8,12 @@ import "sanitize.css/typography.css";
 
 const Globals = createGlobalStyle`
   ::selection {
-    background: ${colors.lightGrey};
-    color: ${colors.white};
+    background: ${colors.primary};
+    color: ${colors.background};
   }
   body {
-    color: black;
-    background: white;
+    color: ${colors.primary};
+    background: ${colors.background};
     font-size: 16px;
     transition: 600ms;
   }
