@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "../theme/Button";
 import { colors, pxToRem, layout } from "../theme/helpers";
+import data from "../theme/data";
 
 const Header = ({ className }) => {
   return (
@@ -10,16 +12,10 @@ const Header = ({ className }) => {
           <h2>Sexy Chocolat</h2>
         </div>
         <div className="menu">
-          <ul>
-            <li>
-              <a href="/">Accueil</a>
-            </li>
-            <li>
-              <a href="/">Produit</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
-            </li>
+          <ul className="list">
+            {data.navigation.map((nav) => (
+              <Button key={nav.id} href={nav.link} name={nav.name} />
+            ))}
           </ul>
         </div>
       </div>
@@ -31,38 +27,18 @@ export default styled(Header)`
   background-color: ${colors.primary};
   color: ${colors.background};
 
-  .logo {
-    width: 40%;
-    height: auto;
-  }
-
   .container {
     ${layout(1220)};
     font-family: "Oxygen", sans-serif;
-    font-size: ${pxToRem(20)};
+    font-size: ${pxToRem(17)};
     font-weight: 400;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: ${pxToRem(10)} 0px;
   }
 
-  .menu li {
+  .list li {
     display: inline;
-    text-align: center;
-    padding: ${pxToRem(20)};
-  }
-
-  a {
-    text-decoration: none;
-    color: ${colors.background};
-  }
-
-  a:hover {
-    background-color: ${colors.background};
-    padding: ${pxToRem(7)};
-    border-radius: ${pxToRem(3)};
-    color: ${colors.accent};
   }
 
   @media only screen and (max-width: 750px) {

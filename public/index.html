@@ -4,7 +4,16 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -40,11 +49,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
     <script>
       console.log(
-        '%cHello toi ! C\'est Anthony Gorski a développer le site que tu vois ! Tu peux me joindre ici | https://agorski.netlify.app/',
-        'color: #50322E; background: #FBE9D4; font-weight: 900; padding: 2px 4px;'
-      )
-    </script>
+        "%cHello toi ! C'est Anthony Gorski a développer le site que tu vois ! Tu peux me joindre ici | https://agorski.netlify.app/",
+        "color: #50322E; background: #FBE9D4; font-weight: 900; padding: 2px 4px;"
+        );
+        </script>
   </body>
 </html>
