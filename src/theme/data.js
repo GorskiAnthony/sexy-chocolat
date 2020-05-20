@@ -6,17 +6,17 @@ export default {
   links: [
     {
       id: "1",
-      name: "Instagram",
+      name: "instagram",
       link: "https://www.instagram.com/lovinfun/",
     },
     {
       id: "2",
-      name: "Twitter",
+      name: "twitter",
       link: "https://twitter.com/Lovinfun",
     },
     {
       id: "3",
-      name: "Facebook",
+      name: "facebook",
       link: "https://www.facebook.com/LovinFun/",
     },
   ],
@@ -28,17 +28,12 @@ export default {
     },
     {
       id: "2",
-      name: "Produits",
+      name: "Séléctions",
       link: "/",
     },
     {
       id: "3",
       name: "Boutiques",
-      link: "/",
-    },
-    {
-      id: "4",
-      name: "Contact",
       link: "/",
     },
   ],

@@ -18,7 +18,7 @@ const Mapping = ({ lat, long, className }) => {
       <Map center={position} zoom={state.zoom} className="earth">
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
         />
         {data.cities.map((city, i) => (
           <Marker key={i} position={[city.lat, city.lng]}></Marker>
@@ -31,6 +31,6 @@ const Mapping = ({ lat, long, className }) => {
 export default styled(Mapping)`
   .earth {
     height: 70vh;
-    width: 100vw;
+    width: 100%;
   }
 `;
