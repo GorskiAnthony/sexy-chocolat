@@ -1,7 +1,7 @@
 export default {
   compagny: {
     name: "Sexy Chocolat",
-    baseline: "Le chocolat à partager",
+    baseline: "Le chocolat à partager !",
   },
   links: [
     {
@@ -653,17 +653,6 @@ export default {
       lat: "47.7996",
       lng: "3.57033",
       population: "41516",
-    },
-    {
-      city: "Bastia",
-      admin: "Corsica",
-      country: "France",
-      population_proper: "40116",
-      iso2: "FR",
-      capital: "",
-      lat: "42.702778",
-      lng: "9.45",
-      population: "41001",
     },
     {
       city: "Ch\u00e2lons-en-Champagne",

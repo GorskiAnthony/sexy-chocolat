@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from "../theme/Hero";
 import styled from "styled-components";
-import { colors } from "../theme/helpers";
+import { colors, layout, pxToRem } from "../theme/helpers";
+import img from "../images/logo.png";
 
 const Banner = ({ className }) => {
   return (
     <div className={className}>
       <Hero>
         <div className="container">
-          <div>
-            <h1>Sexy Chocolat</h1>
-            <h2>Le chocolat a partager</h2>
+          <div className="title">
+            <img src={img} alt="logo"/>
           </div>
           <div>Content</div>
         </div>
@@ -22,10 +22,17 @@ const Banner = ({ className }) => {
 export default styled(Banner)`
   color: ${colors.background};
 
-  .container {
+  .title {
+    padding-top: ${pxToRem(25)};
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .container {
+    ${layout(1440)};
   }
 `;

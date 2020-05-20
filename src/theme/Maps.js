@@ -7,7 +7,7 @@ const Mapping = ({ lat, long, className }) => {
   const state = {
     lat: lat || 48.856697,
     long: long || 2.351462,
-    zoom: 5,
+    zoom: 5.4,
   };
   const position = [state.lat, state.long];
 
