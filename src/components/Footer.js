@@ -13,10 +13,6 @@ const Footer = ({ className }) => {
         <div className="entreprise">
           <h3>{data.compagny.name}</h3>
           <p>{data.compagny.baseline}</p>
-          <h3>Contact</h3>
-          <p>
-            <Button href={data.links[0].link} name="Denis Chont" />
-          </p>
         </div>
         <div className="social-network">
           <h3>Nos Réseau Sociaux</h3>
@@ -81,7 +77,7 @@ svg {
     padding: ${pxToRem(20)};
   }
 
-  .social-network {
+  .social-network, .shops {
     text-align: center;
   }
 `;
