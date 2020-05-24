@@ -8,8 +8,65 @@ const Banner = ({ className }) => {
     <div className={className}>
       <Hero>
         <div className="container">
-          <div className="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore, fuga illo modi harum praesentium beatae ullam voluptas, saepe cumque corporis fugit dolorum placeat at laboriosam vero pariatur amet neque.</div>
-          <div className='right'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo quaerat atque quod numquam quam doloribus nostrum temporibus voluptas iure? Modi quod aperiam fugiat praesentium officia temporibus deserunt corporis rerum.</div>
+          <div className="left">
+            <h1 className="bold">La boutique</h1>
+              Votre boutique <span className="bold">Sexy Chocolat</span> vous accueille du Dimanche au Jeudi dans tout nos points de vente en france métropolitaine de <span className="bold">09h00</span> à <span className="bold">19h00</span>.
+              <p>
+                Si vous souhaitez faire plaisir à une personne de votre choix, d'une manière différente, nous sommes là pour vous ! <br />
+                Nous vous livrons en toute discrétion, de partout en france grâce à notre service de livraison.
+              </p>
+            </div>
+          <div className='right'>
+            <h1 className="accent">Nos compositions</h1>
+            
+              <ul>
+                <li>
+                  <h3 className="bold">
+
+                  Le panier garni :
+                  </h3>
+                  <ol>
+                    Huile de massage au chocolat
+                  </ol>
+                  <ol>
+                    Les choukekettes
+                  </ol>
+                  <ol>
+                    Les menottes en chocolat
+                  </ol>
+                  <ol>
+                    Un bouquet de roses en chocolat
+                  </ol>
+                  <ol>
+                    Un bouquet de roses en chocolat
+                  </ol>
+                </li>
+                <li>
+                  <h3 className="bold">
+
+                  La découverte :
+                  </h3>
+                  <ol>
+                    Huile de massage au chocolat
+                  </ol>
+                   <ol>
+                    Les menottes en chocolat
+                  </ol>
+                  <ol>
+                    Les choukekettes
+                  </ol>
+                </li>
+                <li>
+                  <h3 className="bold">
+
+                  La surprise :
+                  </h3>
+                  <ol>
+                    Un lot qui sera préparé selon les tendances de la journée et nos envies !
+                  </ol>
+                </li>
+              </ul>
+          </div>
         </div>
       </Hero>
     </div>
@@ -24,9 +81,21 @@ export default styled(Banner)`
   }
 
   .left {
+    font-weight: 400;
+    font-size: ${pxToRem(20)};
+    letter-spacing: ${pxToRem(2)};
+  }
+
+  li {
+    list-style: none;
   }
 
   .right {
+    font-size: ${pxToRem(15)};
+
+    border-radius: 37px;
+    box-shadow:  -7px 14px 9px 7px #baac9d70;
+    width: 100%;
     background-color: ${colors.background};
     color: ${colors.accent};
   }
@@ -34,13 +103,14 @@ export default styled(Banner)`
   .container {
     ${layout(1440)};
     padding: ${pxToRem(100)} 0px;
+    align-items: center;
     display: flex;
     justify-content: space-around;
   }
 
   @media only screen and (max-width: 875px) {
     .container {
-      flex-wrap: wrap;
+      flex-wrap: wrap;
     }
   }
 `;

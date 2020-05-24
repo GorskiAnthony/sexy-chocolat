@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors, pxToRem } from "./helpers";
 import { FaTwitterSquare, FaInstagram, FaFacebookSquare } from "react-icons/fa";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 const Button = ({ className, href, name }) => {
@@ -24,12 +25,12 @@ const Button = ({ className, href, name }) => {
 
   return (
     <li className={className}>
-      <a href={href} className="link">
+      <AnchorLink href={href} className="link">
         {
           icon
         }
         {name}
-      </a>
+      </AnchorLink>
     </li>
   );
 };

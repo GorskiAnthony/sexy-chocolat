@@ -24,17 +24,17 @@ export default {
     {
       id: "1",
       name: "Accueil",
-      link: "/",
+      link: "#accueil",
     },
     {
       id: "2",
       name: "Séléctions",
-      link: "/",
+      link: "#selections",
     },
     {
       id: "3",
-      name: "Boutiques",
-      link: "/",
+      name: "Nos Boutiques",
+      link: "#maps",
     },
   ],
   cities: [

@@ -14,7 +14,7 @@ const Mapping = ({ lat, long, className }) => {
   //console.log(position);
 
   return (
-    <div className={className}>
+    <div className={className} id="maps">
       <Map center={position} zoom={state.zoom} className="earth">
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
