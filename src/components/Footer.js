@@ -13,6 +13,8 @@ const Footer = ({ className }) => {
         <div className="entreprise">
           <h3>{data.compagny.name}</h3>
           <p>{data.compagny.baseline}</p>
+          <h3>Contact</h3>
+          <p>Denis Chond : 0142485000</p>
         </div>
         <div className="social-network">
           <h3>Nos Réseau Sociaux</h3>

@@ -45,7 +45,7 @@ const Selection = ({ className }) => {
                 />
             </div>
             <p>
-                <FaInfoCircle /> Notre galerie sera plus étoffé dans les prochains jours !
+                <FaInfoCircle /> Notre galerie sera plus étoffé dans les prochains jours ! 
             </p>
         </div>
     )
@@ -57,7 +57,7 @@ ${layout(1440)};
 padding: ${pxToRem(100)} 0px;
 
 .carousel {
-    padding: ${pxToRem(50)} ${pxToRem(150)};
+    padding: ${pxToRem(50)} ${pxToRem(100)};
 
 }
 

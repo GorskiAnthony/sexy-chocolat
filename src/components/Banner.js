@@ -10,7 +10,7 @@ const Banner = ({ className }) => {
         <div className="container">
           <div className="left">
             <h1 className="bold">La boutique</h1>
-              Votre boutique <span className="bold">Sexy Chocolat</span> vous accueille du Dimanche au Jeudi dans tout nos points de vente en france métropolitaine de <span className="bold">09h00</span> à <span className="bold">19h00</span>.
+              Votre boutique <span className="bold">Sexy Chocolat</span> vous accueille du Dimanche au Jeudi dans tout nos points de vente en france métropolitaine de <span className="bold">12h00</span> à <span className="bold">00h00</span>.
               <p>
                 Si vous souhaitez faire plaisir à une personne de votre choix, d'une manière différente, nous sommes là pour vous ! <br />
                 Nous vous livrons en toute discrétion, de partout en france grâce à notre service de livraison.
